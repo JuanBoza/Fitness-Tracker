@@ -1,8 +1,9 @@
 init();
 
 module.exports = {
-    Workout: require("workout.js"),
-  };
+  Exercise: require("./exercise")
+}
+
 
 async function init() {
   if (location.search.split("=")[1] === undefined) {
