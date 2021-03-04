@@ -16,3 +16,6 @@ async function init() {
   }
 }
 
+// express installed 
+// node installed
+// mongoose installed 
