@@ -25,7 +25,10 @@ app.use(express.static("public"));
   );
 */ 
 
-
+const apiRouter = require("./routes/apiRoutes");
+const htmlRouter = require("./routes/htmlRoutes");
+app.use(apiRouter);
+app.use(htmlRouter);
 
 
 
@@ -41,10 +44,7 @@ mongoose.connect(
     }
   );
 
-const apiRouter = require("./routes/apiRoutes");
-const htmlRouter = require("./routes/htmlRoutes");
-app.use(apiRouter);
-app.use(htmlRouter);
+
 app.listen(PORT, function(){
   console.log('app running')
 }); 

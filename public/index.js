@@ -1,6 +1,6 @@
 init();
 
-module.exports = {
+module.exports = { 
   Exercise: require("./exercise")
 }
 
